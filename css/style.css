@@ -195,6 +195,8 @@ ul {
 
 .section-people {
   color: var(--title-text-color);
+  margin-top: 0;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -202,6 +204,9 @@ ul {
   text-align: center;
 }
 .section-profession {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
