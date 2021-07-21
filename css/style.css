@@ -5,9 +5,11 @@
   --primary-white-color: #ffffff;
   --button-background-color: #f5f4fa;
   --background-color-hero: #2f303a;
-  --card-set-gap: 30px;
   --header-bottom-line: #ececec;
-  --pading-section: 94px;
+  --footer-text-contacts: rgba(255, 255, 255, 0.6);
+  --color-card: #eeeeee;
+  --card-set-gap: 30px;
+  --padding-section: 94px;
 }
 
 body {
@@ -128,6 +130,7 @@ ul {
 .hero {
   text-align: center;
   background-color: var(--background-color-hero);
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -149,6 +152,7 @@ ul {
   border-radius: 4px;
   padding: 10px 32px;
   min-width: 200px;
+  border: 0px;
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -164,13 +168,13 @@ ul {
 /* Section */
 
 .section {
-  padding-top: var(--pading-section);
-  padding-bottom: var(--pading-section);
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
 }
 
 .section.no-padding {
   padding-top: 0;
-  padding-bottom: var(--pading-section);
+  padding-bottom: var(--padding-section);
 }
 
 .section-title {
@@ -274,8 +278,16 @@ ul {
 
 /* Footer */
 
+
+
 .footer-background {
   background-color: var(--background-color-hero);
+}
+
+.footer-background .container {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-white {
@@ -283,11 +295,6 @@ ul {
 }
 
 /* Footer nav */
-
-.logo-footer {
-  display: inline-block;
-  margin-top: 60px;
-}
 
 .mail-footer {
   margin-top: 20px;
@@ -301,17 +308,12 @@ ul {
   background-color: var(--background-color-hero);
 }
 
-.footer-nav .footer-phone {
-  display: inline-block;
-  margin-bottom: 60px;
-}
-
 .footer-contacts {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text-contacts);
 }
 
 .footer-nav .footer-contacts:hover,
@@ -348,6 +350,8 @@ ul {
   color: var(--title-text-color);
   background-color: var(--button-background-color);
 
+  border: 0px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -360,11 +364,13 @@ ul {
 .button-porfolio:hover {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .section-porfolio {
-  margin-top: var(--pading-section);
-  margin-bottom: var(--pading-section);
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
 }
 
 .portfolio-link-without-underlined {
@@ -416,6 +422,8 @@ ul {
   margin-top: 4px;
 }
 
-.card {
-  border: 1px solid #eeeeee;
+.card-content {
+  border-bottom: 1px solid var(--color-card);
+  border-right: 1px solid var(--color-card);
+  border-left: 1px solid var(--color-card);
 }
