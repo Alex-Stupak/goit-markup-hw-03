@@ -6,6 +6,7 @@
   --button-background-color: #f5f4fa;
   --background-color-hero: #2f303a;
   --card-set-gap: 30px;
+  --header-bottom-line: #ececec;
 }
 
 body {
@@ -65,7 +66,7 @@ ul {
 }
 
 .header-line {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-bottom-line);
 }
 /* Site nav */
 
