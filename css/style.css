@@ -218,6 +218,10 @@ ul {
 
 /* Features */
 
+.hidden-title {
+  display: none;
+}
+
 .features-list {
   display: flex;
 }
@@ -334,9 +338,7 @@ ul {
 .flex-button {
   display: flex;
   justify-content: center;
-
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-bottom: 34px;
 }
 
 .flex-button .flex-button-list + .flex-button-list {
