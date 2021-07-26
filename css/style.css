@@ -148,6 +148,11 @@ ul {
   text-transform: uppercase;
 }
 
+.hero-text {
+  width: 696px;
+  margin: auto;
+}
+
 /* Button */
 
 .primary-button {
